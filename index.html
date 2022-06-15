@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Homework 3 - Working with DOM" />
+</head>
+<body>
+    
+    <main>
+        <section class="header">
+            <h1 class="bold">TODO</h1>
+            <button class="theme-btn">
+                <img src="./assets/images/icon-sun.svg" aria-label="theme" />
+            </button>
+        </section>
+
+        <form>
+            <input id="todo-checkbox" type="checkbox" aria-label="checkbox"/>
+            <input id="todo-text" type="text" placeholder="Create a new todo…" aria-label="Write what to do"/>
+        </form>
+
+        <section class="list">
+            <div class="list-item">
+                <div>
+                    <input type="checkbox" >
+                    <p>some text</p>
+                </div>
+    
+                <button type="button">
+                    <img src="./assets/images/icon-cross.svg" aria-label="delete">
+                </button>
+            </div>
+        </section> 
+
+        <section>
+            <h3> <span>0</span> items left</h3>
+
+            <div>
+                <button type="button">All</button>
+                <button type="button">Active</button>
+                <button type="button">Completed</button>
+            </div>
+
+            <button type="button">Clear Completed</button>
+        </section>
+
+        <section>
+            <button type="button">All</button>
+            <button type="button">Active</button>
+            <button type="button">Completed</button>
+        </section>
+
+    </main>
+
+</body>
+</html>
