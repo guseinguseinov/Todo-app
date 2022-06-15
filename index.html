@@ -28,36 +28,42 @@
 
         <section class="list">
             <div class="list-item">
-                <div>
-                    <input type="checkbox" >
-                    <p>some text</p>
+                <div class="list-container">
+                    <input class="list-item-checkbox" type="checkbox" >
+                    <p class="text">some text</p>
                 </div>
     
-                <button type="button">
+                <button class="delete" type="button">
                     <img src="./assets/images/icon-cross.svg" aria-label="delete">
                 </button>
             </div>
+
+            <div class="filter">
+                <h3> <span>0</span> items left</h3>
+
+                <div class="filter-container">
+                    <button class="btn bold" type="button">All</button>
+                    <button class="btn bold" type="button">Active</button>
+                    <button class="btn bold" type="button">Completed</button>
+                </div>
+
+                <button class="btn" type="button">Clear Completed</button>
+
+            </div>
         </section> 
 
-        <section>
-            <h3> <span>0</span> items left</h3>
-
-            <div>
-                <button type="button">All</button>
-                <button type="button">Active</button>
-                <button type="button">Completed</button>
-            </div>
-
-            <button type="button">Clear Completed</button>
-        </section>
-
-        <section>
-            <button type="button">All</button>
-            <button type="button">Active</button>
-            <button type="button">Completed</button>
+        <section class="filtr-btns">
+            <button class="btn bold" type="button">All</button>
+            <button class="btn bold" type="button">Active</button>
+            <button class="btn bold" type="button">Completed</button>
         </section>
 
     </main>
+
+
+    <footer>
+        <p>Made by <a class="bold" href="https://github.com/guseinguseinov/">Gusein</a></p>
+    </footer>
 
 </body>
 </html>

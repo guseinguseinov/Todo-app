@@ -1,7 +1,11 @@
 @import url(./base.css);
 
 .bold {
-    font-weight: 400;
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
 }
 
 /* header section */
@@ -52,6 +56,10 @@ form {
     width: 100%;
     border: 0;
     padding: 0 24px;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+    color: var(--input-color);
 }
 
 
@@ -61,8 +69,127 @@ form {
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+    border-radius: 5px;
+    margin-bottom: 16px;
 }
 
 .list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom:1px solid var(--border-bottom-color);
+}
+
+.list-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.delete {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+    width: 18px;
+    height: 18px;
+}
+
+.list-item:hover  .delete{
+    display: block;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+    color: var(--main-color);
+}
+
+/* footer */
+.filter {
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    letter-spacing: -0.194444px;
+    color: var(--count-color)
+}
+
+.filter-container {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.194444px;
+    display: block;
+}
+
+.btn {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--count-color);
+}
+
+.btn:hover {
+    color: var(--main-color);
+}
+
+.btn:focus {
+    color: var(--active-color);
+}
+
+/* filtr-btns  */
+.filtr-btns {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    display: none;
+    background: #FFFFFF;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--active-color);
+}
+
+@media only screen and (max-width:568px) {
+    /* header */
+    main {
+        width: 95%;
+        margin: 70px auto;
+    }
+    h1 {
+        font-size: 30px;
+    }
+
+    .filter-container {
+        display: none;
+    }
+
+    /* form */
+    #todo-text {
+        font-size: 14px;
+    }
+
+    /* filtr-btns */
+    .filtr-btns {
+        display: flex;
+    }
     
 }
