@@ -8,6 +8,10 @@
     display: flex;
 }
 
+.line-through {
+    text-decoration: line-through;
+}
+
 /* header section */
 main {
     width: 541px;
