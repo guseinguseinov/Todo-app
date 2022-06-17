@@ -10,6 +10,7 @@
 
 .line-through {
     text-decoration: line-through;
+    color: var(--completed-color);
 }
 
 /* header section */

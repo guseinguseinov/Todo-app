@@ -11,6 +11,7 @@ html{
     --form-bg-color: #fff;
     --box-shadow-color: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
     --bg: #fff;
+    --completed-color: #D1D2DA;
 }
 
 html[data-theme='dark'] {
