@@ -15,14 +15,14 @@
 <body>
     
     <main>
-        <section class="header">
+        <section class="header flex">
             <h1 class="bold">TODO</h1>
             <button class="theme-btn">
                 <img class="theme-icon" src="./assets/images/icon-moon.svg" aria-label="theme" />
             </button>
         </section>
 
-        <form class="user-form">
+        <form class="user-form flex">
             <input name="checkbox" id="todo-checkbox" type="checkbox" aria-label="checkbox"/>
             <input name="text" id="todo-text" type="text" placeholder="Create a new todo…" aria-label="Write what to do"/>
             <button class="add-btn">
@@ -30,9 +30,9 @@
             </button>
         </form>
 
-        <section class="list">
+        <section class="list flex">
 
-            <div class="filter">
+            <div class="filter flex">
                 <h3> <span class="count">0</span> items left</h3>
 
                 <div class="filter-container">

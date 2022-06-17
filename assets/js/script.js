@@ -35,8 +35,8 @@ userForm.addEventListener('submit', function(e) {
         display(allList);
 
         let newItem = `
-        <div class="list-item">
-            <div class="list-container">
+        <div class="list-item flex">
+            <div class="list-container flex">
                 <input class="list-item-checkbox" type="checkbox" >
                 <p class="text">${text.value}</p>
             </div>
@@ -46,7 +46,6 @@ userForm.addEventListener('submit', function(e) {
             </button>
         </div>
         `
-
         userList.insertAdjacentHTML('afterbegin', newItem);
         counter.textContent++;
         allList.push(userList.children[0]);
@@ -54,7 +53,6 @@ userForm.addEventListener('submit', function(e) {
         if (checkbox.checked) {
             document.querySelector('.list-item-checkbox').checked = true;
             document.querySelector('.text').classList.add('line-through');
-
             counter.textContent--;
             completedList.push(userList.children[0]);
         }else {
