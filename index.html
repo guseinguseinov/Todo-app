@@ -25,28 +25,31 @@
         <form class="user-form">
             <input name="checkbox" id="todo-checkbox" type="checkbox" aria-label="checkbox"/>
             <input name="text" id="todo-text" type="text" placeholder="Create a new todo…" aria-label="Write what to do"/>
+            <button class="add-btn">
+                <img src="./assets/images/add.png" alt="add" />
+            </button>
         </form>
 
         <section class="list">
 
             <div class="filter">
-                <h3> <span>0</span> items left</h3>
+                <h3> <span class="count">0</span> items left</h3>
 
                 <div class="filter-container">
-                    <button class="btn bold" type="button">All</button>
-                    <button class="btn bold" type="button">Active</button>
-                    <button class="btn bold" type="button">Completed</button>
+                    <button class="btn bold all" type="button">All</button>
+                    <button class="btn bold active" type="button">Active</button>
+                    <button class="btn bold completed" type="button">Completed</button>
                 </div>
 
-                <button class="btn" type="button">Clear Completed</button>
+                <button class="btn clear-completed" type="button">Clear Completed</button>
 
             </div>
         </section> 
 
         <section class="filtr-btns">
-            <button class="btn bold" type="button">All</button>
-            <button class="btn bold" type="button">Active</button>
-            <button class="btn bold" type="button">Completed</button>
+            <button class="btn bold all" type="button">All</button>
+            <button class="btn bold active" type="button">Active</button>
+            <button class="btn bold completed" type="button">Completed</button>
         </section>
 
     </main>

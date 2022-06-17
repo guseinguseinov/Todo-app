@@ -10,7 +10,7 @@
 
 .line-through {
     text-decoration: line-through;
-    color: var(--completed-color);
+    color: var(--completed-color) !important;
 }
 
 /* header section */
@@ -47,7 +47,7 @@ h1 {
 form {
     width: 100%;
     height: 64px;
-    padding: 0 24px;
+    padding: 0 20px 0 24px;
     background-color: var(--form-bg-color);
     box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
     border-radius: 5px;
@@ -60,7 +60,8 @@ form {
     height: 100%;
     width: 100%;
     border: 0;
-    padding: 0 24px;
+    padding: 0 12px;
+    margin: 0 12px;
     font-size: 18px;
     line-height: 18px;
     letter-spacing: -0.25px;
@@ -68,6 +69,17 @@ form {
     background-color: var(--form-bg-color);
 }
 
+.add-btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.add-btn img {
+    width: 30px;
+    height: 30px;
+}
 
 /* list items */
 .list {
@@ -192,6 +204,10 @@ footer a:hover {
     /* form */
     #todo-text {
         font-size: 14px;
+    }
+
+    .add-btn {
+        display: block;
     }
 
     /* list items */
