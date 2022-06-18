@@ -35,8 +35,8 @@ userForm.addEventListener('submit', function(e) {
         display(allList);
 
         let newItem = `
-        <div class="list-item flex">
-            <div class="list-container flex">
+        <div class="list-item">
+            <div class="list-container">
                 <input class="list-item-checkbox" type="checkbox" >
                 <p class="text">${text.value}</p>
             </div>

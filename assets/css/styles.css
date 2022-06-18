@@ -90,12 +90,14 @@ form {
 }
 
 .list-item {
+    display: flex;
     justify-content: space-between;
     padding: 20px 24px;
     border-bottom:1px solid var(--border-bottom-color);
 }
 
 .list-container {
+    display: flex;
     gap: 10px;
     align-items: center;
 }
